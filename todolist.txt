@@ -22,3 +22,6 @@ Currently tried:
    StackingAndEnsembling (too difficult)
 Should try:
   Top 1% Approach: EDA, New Models and Stacking
+
+Implementation
+  Implementing our model to the website.
