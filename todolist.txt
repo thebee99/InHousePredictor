@@ -19,3 +19,5 @@ Trying codes on Kaggle that showed good result might also perform well on our da
 Currently tried:
    Top 1%-🏡Housing Price[EDA+Random] for Everyone🤓
    StackingAndEnsembling (too difficult)
+Should try:
+  Top 1% Approach: EDA, New Models and Stacking
