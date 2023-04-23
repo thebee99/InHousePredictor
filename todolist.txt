@@ -10,7 +10,7 @@ Data Collection
   2. Getting more than 15,000 data
 Model
   1. Random Forest (done) / currently best
-  2. XGBoost (done)
+  2. Gradient boosting (done)
   3. Linear Regression (done)
   4. Logistic Regression (done)
   5. Deep Learning
