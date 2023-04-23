@@ -1,0 +1,21 @@
+Metric
+  1. change metric from MAE to MPAE
+Data Preprocessing
+  1. normaliztion
+  2. visualization for Price
+  3. finding optimal outlier threshold
+Data Collection
+  1. Finding way to solve captcha for more data features
+  2. Getting more than 15,000 data
+Model
+  1. Random Forest (done) / currently best
+  2. XGBoost (done)
+  3. Linear Regression (done)
+  4. Logistic Regression (done)
+  5. Deep Learning
+  6. Stacking
+
+Trying codes on Kaggle that showed good result might also perform well on our datasets as well
+Currently tried:
+   Top 1%-🏡Housing Price[EDA+Random] for Everyone🤓
+   StackingAndEnsembling (too difficult)
