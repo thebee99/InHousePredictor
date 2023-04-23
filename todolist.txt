@@ -4,6 +4,7 @@ Data Preprocessing
   1. normaliztion
   2. visualization for Price
   3. finding optimal outlier threshold
+  4. After prediction check the rows in test data in which MAPE is highest(order based on MPAE)
 Data Collection
   1. Finding way to solve captcha for more data features
   2. Getting more than 15,000 data
