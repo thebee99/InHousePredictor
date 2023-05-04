@@ -25,3 +25,6 @@ Should try:
 
 Implementation
   Implementing our model to the website.
+
+Additional information (after professor consultation):
+ try LGBM, using FFNN, mixture of Gaussian models (point is not from the methodology, try to improve undesrtanding of the data → clustering, visualization using numap, or disney), try to build your own model for each cluster after clustering
