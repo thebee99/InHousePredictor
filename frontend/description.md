@@ -1,1 +1,1 @@
-For front-end team, submit code files and write brief descriptions of code here. 
+The front-end section of this project consists of HTML and CSS files. You can download the zip file containing the prototype, which includes specific resources such as CSS files, image sources, and more. Use this prototype to explore the project's visual elements and design components.
