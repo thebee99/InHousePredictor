@@ -101,6 +101,30 @@
         
     }
 
+    document.addEventListener("DOMContentLoaded", function() {
+      const button = document.getElementById("button");
+      const addressText = "Address";
+      button.textContent = addressText;
+    
+      const logoImage = new Image();
+      logoImage.src = "escritorio/WebsitePrototype2/static/img/location.png";
+      logoImage.classList.add("logo-image");
+    
+      button.innerHTML = ""; // Clear the button's existing content
+      button.appendChild(logoImage); // Append the logo image to the button
+      button.appendChild(document.createTextNode(addressText)); // Append the text node to the button
+    
+      const otherDropdowns = document.querySelectorAll(".dropdown:not(#location)");
+      otherDropdowns.forEach(function(dropdown) {
+        dropdown.classList.add("no-logo");
+      });
+    });
+    
+    
+    
+    
+    
+
 
   }
   
