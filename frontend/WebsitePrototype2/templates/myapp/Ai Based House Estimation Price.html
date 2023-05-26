@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<!--{% load static %}-->
 <!-- saved from url=(0025)https://butternut.ai/demo -->
 <head>
   <script src="D:/escritorio/WebsitePrototype2/static/js/functions.js"> </script>
+  <!--<script src="% static 'js/functions.js' %"></script>-->
 </head>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -17,6 +19,7 @@
     <link href="./Ai Based House Estimation Price_files/css" rel="stylesheet" type="text/css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="D:\escritorio\WebsitePrototype2\static\css\styles.css" rel="stylesheet">
+    <!--<link href="{% static 'css/style.css'%}" rel="stylesheet"-->
 
     <!-- Calendly link widget begin -->
     <link href="./Ai Based House Estimation Price_files/widget.css" rel="stylesheet">
@@ -37,58 +40,46 @@
       let keywords = 'generator, houses, prediction, real state, map';
       let template_id = '1682235317_875';
     </script>
-
+  
   
     <!-- ********************************************************Language Button **********************************************-->
     <!-- ********************************************************Language Button **********************************************-->
     <!-- ********************************************************Language Button **********************************************-->
 
-      <!-- <div class="Language"></div>
+      <div class="Language"></div>
         <button class="english" onclick="goEnglish()"></button>
         <button class="indonesian" onclick="goIndonesian()"></button>
-      </div> -->
-      
-      
+      </div>
+
     <!-- ********************************************************Language Button **********************************************-->
     <!-- ********************************************************Language Button **********************************************-->
     <!-- ********************************************************Language Button **********************************************-->
 
-   <!-- Masthead-->
-<!-- Masthead-->
-<header class="masthead" style="background: url('D:/escritorio/WebsitePrototype2/static/img/background1.jpg') no-repeat center center; background-size: cover;">
-  <div class="container position-relative">
-    <div class="row justify-content-center">
-      <div class="col-xl-6">
-        <div class="text-center text-white">
-          <!-- Page heading-->
-          <div class="container rounded modify-hover" element-id="headline">
-            <h1 id="headline" class="mb-4">AI House Listing</h1>
-          </div>
-          <div class="container rounded modify-hover" element-id="description">
-            <p id="description" class="lead mb-4">Get accurate house price predictions with our AI-based map generator. Streamline your real estate business with our cutting-edge technology.</p>
-          </div>
-          <div class="Language">
-            <button class="english" onclick="goEnglish()" onmouseover="showDialog('English (United States)')" onmouseout="hideDialog()"></button>
-            <button class="indonesian" onclick="goIndonesian()" onmouseover="showDialog('Indonesian')" onmouseout="hideDialog()"></button>
-            <div class="dialogBox" id="dialogBox">
-              <span class="dialogText" id="dialogText"></span>
+    <!-- Masthead-->
+    <!--<header class="masthead" style="background: url(&#39;https://images.unsplash.com/photo-1577086664693-894d8405334a?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=Mnw0MjkyMDl8MHwxfHNlYXJjaHwxfHxnZW5lcmF0b3IlMkMlMjBob3VzZXMlMkMlMjBwcmVkaWN0aW9uJTJDJTIwcmVhbCUyMHN0YXRlJTJDJTIwbWFwfGVufDB8fHx8MTY4MjIzNTMwNQ&amp;ixlib=rb-4.0.3&amp;q=85&#39;) no-repeat center center;">-->
+    <header class="masthead" style="background: url('D:/escritorio/WebsitePrototype2/static/img/background1.jpg') no-repeat center center; background-size: 100% 100%">
+    <!--<header class="masthead" style="background: url('{% static  img/background1.jpg %}') no-repeat center center; background-size: 100% 100%"></header>-->
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-xl-6">
+            <div class="text-center text-white">
+              <!-- Page heading-->
+              <div class="container rounded modify-hover" element-id="headline">
+                <h1 id="headline" class="mb-5">AI House Listing</h1>
+              </div>
+              <div class="container rounded modify-hover" element-id="description">
+                <p id="description" class="lead mb-4">Get accurate house price predictions with our AI based map generator. Streamline your real estate business with our cutting-edge technology.</p>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary btn-lg" id="submitButton" onclick="goToPredict()">
+                  Get Started
+                </button>
+              </div>
             </div>
           </div>
-        <div class="button-container">
-          <button class="btn btn-primary btn-lg" id="submitButton" onclick="goToPredict()">Get Started</button>
         </div>
       </div>
-      <div class="menu-container">
-        <a href="#" class="menu-link" element-id="services">Our Services</a>
-        <a href="#" class="menu-link" element-id="questions">Questions</a>
-        <a href="#" class="menu-link" element-id="feedback">Feedback</a>
-        <a href="#" class="menu-link" element-id="contact">Contact Us</a>
-      </div>      
-    </div>
-    </div>
-  </div>
-</header>
-
+    </header>
 
     <!-- Go Live Modal -->
     <div class="modal fade" id="goLiveModal" tabindex="-1" aria-labelledby="goLiveModalLabel" style="display: none" aria-hidden="true">
@@ -186,6 +177,7 @@
           <!-- <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div> -->
           <div class="container rounded modify-hover" element-id="services_img_2">
             <img id="services_img_2" class="img-fluid rounded-circle mb-3" src="D:/escritorio/WebsitePrototype2/static/img/background.jpg" alt="...">
+            <!--<img id="services_img_2" class="img-fluid rounded-circle mb-3" src="{% static  img/background.jpg %}" alt="...">-->
           <button class="btn rounded-circle btn-sm modify-hover-button"><i class="bi bi-bootstrap-reboot text-white h5"></i></button></div>
           <div class="container rounded modify-hover" element-id="services_2_title">
             <h3 id="services_2_title">Real Estate Map</h3>
@@ -270,7 +262,7 @@
     <!-- **************************************************** Drop Down Menus **************************************************-->
     <!-- **************************************************** Drop Down Menus **************************************************-->
     
-    <section class="call-to-action text-white text-center" style="background: url('D:/escritorio/WebsitePrototype2/static/img/house3.jpg') no-repeat center center;" id="signup">
+    <section class="call-to-action text-white text-center" style="background: url(&#39;https://images.unsplash.com/photo-1528449995200-88f6f5734325?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=Mnw0MjkyMDl8MHwxfHNlYXJjaHw4fHxnZW5lcmF0b3IlMkMlMjBob3VzZXMlMkMlMjBwcmVkaWN0aW9uJTJDJTIwcmVhbCUyMHN0YXRlJTJDJTIwbWFwfGVufDB8fHx8MTY4MjIzNTMwNQ&amp;ixlib=rb-4.0.3&amp;q=85&#39;) no-repeat center center" id="signup">
       <div class="container position-relative">
         <div class="row justify-content-center">
           <div class="col-xl-6">
@@ -279,11 +271,9 @@
               <!-- <div class="row"> -->
 
                 <div class="dropdown" id="Location">
-                  <button onclick="myFunction('myDropdown')" class="dropbtn" id="button">Address</button>
+                  <button onclick="readFile('myDropdown', 'button', 'Address: ', 'Address', 'myInput')" class="dropbtn" id="button">Address</button>
                   <div id="myDropdown" class="dropdown-content">
-                    <input type="text" placeholder="Search Location" id="myInput" onkeyup="filterFunction('myDropdown', 'myInput')">
-                    <button onclick="replaceName('Location 1', 'button')" class="myButtons">Location 1</button>
-                    <button onclick="replaceName('Location 2', 'button')" class="myButtons">Location 2</button>
+                    
                   </div>
                 </div>
 
@@ -312,36 +302,16 @@
                 <br> </br>
 
                 <div class="dropdown4" id="Certificate">
-                  <button onclick="myFunction('myDropdown4')" class="dropbtn" id="button4">Certificate</button>
+                  <button onclick="readFile('myDropdown4', 'button4', 'Certificate: ', 'Certificate', 'myInput4')" class="dropbtn" id="button4">Certificate</button>
                   <div id="myDropdown4" class="dropdown-content">
-                    <input type="text" placeholder="Search Certificate" id="myInput4" onkeyup="filterFunction('myDropdown4', 'myInput4')">
-                    <button onclick="replaceName('None','button4','Certificate: ')" class="myButtons">None</button>
-                    <button onclick="replaceName('AJB - Akta Jual Beli','button4','Certificate: ')" class="myButtons">AJB - Akta Jual Beli</button>
-                    <button onclick="replaceName('Built: 2006','button4','Certificate :')" class="myButtons">Built: 2006</button>
-                    <button onclick="replaceName('Built: 2015','button4','Certificate :')" class="myButtons">Built: 2015</button>
-                    <button onclick="replaceName('Hak Pakai','button4','Certificate :')" class="myButtons">Hak Pakai</button>
-                    <button onclick="replaceName('Hak Sewa','button4','Certificate :')" class="myButtons">Hak Sewa</button>
-                    <button onclick="replaceName('PPJB - Perjanjian Pengikatan Jual Beli','button4','Certificate :')" class="myButtons">PPJB - Perjanjian Pengikatan Jual Beli</button>
-                    <button onclick="replaceName('SHGB - Hak Guna Bangunan','button4','Certificate :')" class="myButtons">SHGB - Hak Guna Bangunan</button>
-                    <button onclick="replaceName('SHM - Sertifikat Hak Milik','button4','Certificate :')" class="myButtons">SHM - Sertifikat Hak Milik</button>
-                    <button onclick="replaceName('Sertifikat Belum Pecah','button4','Certificate :')" class="myButtons">Sertifikat Belum Pecah</button>
-                    <button onclick="replaceName('Strata','button4','Certificate :')" class="myButtons">Strata</button>
-                    <button onclick="replaceName('Surat Ijo / Surat Hijau','button4','Certificate :')" class="myButtons">Surat Ijo / Surat Hijau</button>
-                    <button onclick="replaceName('Tanah Eigendom Verponding','button4','Certificate :')" class="myButtons">Tanah Eigendom Verponding</button> 
-                    <button onclick="replaceName('Tanah Girik / Rincik / Kikitir','button4','Certificate :')" class="myButtons">Tanah Girik / Rincik / Kikitir</button> 
-                    <button onclick="replaceName('Warisan','button4','Certificate :')" class="myButtons">Warisan</button> 
+                    
                   </div>
                 </div>
 
                 <div class="dropdown5" id="Division">
-                  <button onclick="myFunction('myDropdown5')" class="dropbtn" id="button5">Jakarta Division</button>
+                  <button onclick="readFile('myDropdown5', 'button5', 'Jakarta Division: ', 'Jakarta Division', 'myInput5')" class="dropbtn" id="button5">Jakarta Division</button>
                   <div id="myDropdown5" class="dropdown-content">
-                    <input type="text" placeholder="Search Jakarta Division" id="myInput5" onkeyup="filterFunction('myDropdown5', 'myInput5')">
-                    <button onclick="replaceName('North','button5','Jakarta Division: ')" class="myButtons">North</button>
-                    <button onclick="replaceName('Central','button5', 'Jakarta Division: ')" class="myButtons">Central</button>
-                    <button onclick="replaceName('East','button5','Jakarta Division: ')" class="myButtons">East</button>
-                    <button onclick="replaceName('West','button5','Jakarta Division: ')" class="myButtons">Weast</button>
-                    <button onclick="replaceName('South','button','Jakarta Division: ')" class="myButtons">South</button>
+                    
                   </div>
                 </div>
                 
@@ -376,9 +346,6 @@
         </div>
       </div>
     </section>
-
-
-    
 
     <!--*********************************************** End Drop Menus *********************************************************-->
     <!--*********************************************** End Drop Menus *********************************************************-->
